@@ -1,13 +1,35 @@
-# NX584 Home Assistant Add-on
+# NX-8E Home Assistant Add-on
 
-This is a very simple Home Assistant add-on for the [NX584 Interface Server](https://github.com/kk7ds/pynx584)
+This is a very simple Home Assistant add-on for the [NX584/NX-8E Interface Server](https://github.com/kk7ds/pynx584)
 
-## How to use
+## Setting Serial to TCP/IP 
+
+I'm using Serial to TCP/IP to connect to the RS232 of the my NX8E. You can buy this on Amazon.com for around $26 and RS232 serial cable. 
+
+Amazon Link: https://a.co/d/8SudbqT
+
+![usr](images/usr-tcp232-302.png)
+
+![serial-cable](images/db9.png)
+
+* You don't need to install any software for this item to work. It has a web based configuration that you can use to adjust the settings. 
+* First, you just need to connect it to your computer directly using ethernet cable. 
+* This device has static IP address assigned which is 192.168.0.7, so all you have to do is setup your computer to have static address on similar subnet for example: 192.168.0.2 and subnet of 255.255.255.0. 
+* Open any browser and visit http://192.168.0.7. Username: admin, Password: admin. 
+* Click the `Local IP Config` and set the IP Type to DHCP. Click Save. Don't click the Restart Module yet. 
+* Click the `Serial Port` and adjust the following parameters similar below and click save. 
+
+![serial-port](images/serial-port.png)
+
+* You can now remove the device from your PC. From here you can move the device to you alarm panel, connect the serial cable, ethernet to your switch hub and the power cable. On my setup, I'm using power cable that I made which has step-down DC converter (12v to 5v) so I don't to use separate power source. This is mod not required, you can just use the included 5v power adapter. 
+
+
+![installed](images/installed.png)
+
 
 * Fork this repository (this is necesary, because currently this add-on does not have any user configuration)
 * Refer to the [configuration documentation](https://github.com/kk7ds/pynx584) of the NX584 server and:
-  * Change [config.ini](nx584/config.ini) to describe your NX panel configuration (number of zones, zone names, ES vs US date-time format, etc.)
-  * Change [run.sh](nx584/run.sh) to reflect how you'll connect the NX584 server to the NX pannel. (Where it says `--connect 192.168.30.1:10000`)
+* Change [config.ini](nx584/config.ini) to describe your NX panel configuration (number of zones, zone names, ES vs US date-time format, etc.)
 * Push your changes to your forked repository
 * Add your forked repository as a [Third-Party Add-On in Home Assistant](https://www.home-assistant.io/common-tasks/os#installing-third-party-add-ons)
 * [Configure your NX584 Alarm Panel and Binary Sensors](https://www.home-assistant.io/integrations/nx584/) in Home Assistant
