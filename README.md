@@ -21,7 +21,7 @@ Amazon Link: https://a.co/d/8SudbqT
 
 ![serial-port](images/serial-port.png)
 
-* You can now remove the device from your PC. From here you can move the device to you alarm panel, connect the serial cable, ethernet to your switch hub and the power cable. On my setup, I'm using power cable that I made which has step-down DC converter (12v to 5v) so I don't to use separate power source. This is mod not required, you can just use the included 5v power adapter. 
+* You can now remove the device from your PC. From here you can move the device to you alarm panel, connect the serial cable, ethernet to your switch hub and the power cable. On my setup, I'm using power cable that I made which has step-down DC converter (12v to 5v) so I don't need to use separate power source. This mod not required, you can just use the included 5v power adapter. 
 
 
 ![installed](images/installed.png)
