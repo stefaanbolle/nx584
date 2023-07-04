@@ -33,6 +33,9 @@ Amazon Link: https://a.co/d/8SudbqT
 * Push your changes to your forked repository
 * Add your forked repository as a [Third-Party Add-On in Home Assistant](https://www.home-assistant.io/common-tasks/os#installing-third-party-add-ons)
 * [Configure your NX584 Alarm Panel and Binary Sensors](https://www.home-assistant.io/integrations/nx584/) in Home Assistant
+* Restart HA. 
+
+
 
 **HINT**: If the add-on was installed successfully, you should see something like this in the `Logs` section of the add-on:
 ```
@@ -67,3 +70,7 @@ s6-rc: info: service legacy-services successfully started
 2022-09-11 13:32:44,201 controller INFO Zone 2 (VZ/Others) state is NORMAL
 2022-09-11 13:32:44,205 _internal INFO 172.30.32.1 - - [11/Sep/2022 13:32:44] "GET /events?index=226&timeout=60
 ```
+
+# Troubleshooting
+
+If you get a log saying no reusable address, you might need to switch from DNS name `usr-tcp232-302` to the actual IP address and re-install. 
