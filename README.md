@@ -1,3 +1,9 @@
+UPDATES:
+
+1. I was getting errors when I tried to install the add-on in HA. Based on the post from balda at https://community.home-assistant.io/t/errors-when-buliding-a-new-addon/198841/17, there needs to be a build.json file in the nx584 directory. I added one to my fork and it now installs fine.
+
+2. I am also having issues getting the USR 302 to connect to my NX-8E. I am pretty sure it is a cable issue since you normally use a null modem cable to connect to a PC. I need to switch tx and rx to see if this fixes the issue.  Basically, be aware of the needed wiring.  I will post an update once I solve the issue.
+
 # NX-8E Home Assistant Add-on
 
 This is a very simple Home Assistant add-on for the [NX584/NX-8E Interface Server](https://github.com/kk7ds/pynx584)
