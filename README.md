@@ -2,7 +2,11 @@ UPDATES:
 
 1. I was getting errors when I tried to install the add-on in HA. Based on the post from balda at https://community.home-assistant.io/t/errors-when-buliding-a-new-addon/198841/17, there needs to be a build.json file in the nx584 directory. I added one to my fork and it now installs fine.
 
-2. I am also having issues getting the USR 302 to connect to my NX-8E. I am pretty sure it is a cable issue since you normally use a null modem cable to connect to a PC. I need to switch tx and rx to see if this fixes the issue.  Basically, be aware of the needed wiring.  I will post an update once I solve the issue.
+2. I was also having issues getting the USR 302 to connect to my NX-8E. It turns out because the USR 302 uses a female plug tx and rx might be reversed. I am using what I think is the original P-0003 DIN 10 to DB9 adapter to connect serial to the NX-8E which should be a straight through connection. It has a male end like a PC and can connect directly to the USR 302 without having to us a null cable modem or switching tx/rx. End story is MAKE SURE YOU HAVE YOUR WIRING CORRECT!. Below are some resources on the pinouts but I haven't found any that are clear on exact pinouts so trial an error might be necessary.
+
+http://www.increa.com/reverse/nx-8e/index.html
+https://wiki.linuxmce.org/index.php/Caddx_NX-8E
+https://forums.homeseer.com/forum/security-systems-plug-ins/security-system-discussion/caddx-rien-du-pre/85534-caddx-plugin/page8
 
 # NX-8E Home Assistant Add-on
 
