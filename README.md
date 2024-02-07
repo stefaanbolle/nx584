@@ -5,7 +5,9 @@ UPDATES:
 2. I was also having issues getting the USR 302 to connect to my NX-8E. It turns out because the USR 302 uses a female plug tx and rx might be reversed. I am using what I think is the original P-0003 DIN 10 to DB9 adapter to connect serial to the NX-8E which should be a straight through connection. It has a male end like a PC and can connect directly to the USR 302 without having to us a null cable modem or switching tx/rx. End story is MAKE SURE YOU HAVE YOUR WIRING CORRECT!. Below are some resources on the pinouts but I haven't found any that are clear on exact pinouts so trial an error might be necessary.
 
 http://www.increa.com/reverse/nx-8e/index.html
+
 https://wiki.linuxmce.org/index.php/Caddx_NX-8E
+
 https://forums.homeseer.com/forum/security-systems-plug-ins/security-system-discussion/caddx-rien-du-pre/85534-caddx-plugin/page8
 
 # NX-8E Home Assistant Add-on
