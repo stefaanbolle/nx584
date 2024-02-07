@@ -18,7 +18,7 @@ This is a very simple Home Assistant add-on for the [NX584/NX-8E Interface Serve
 
 I'm using Serial to TCP/IP to connect to the RS232 of the my NX8E. You can buy this on Amazon.com for around $26 and RS232 serial cable. 
 
-Amazon Link: https://a.co/d/8SudbqT
+Amazon Link: [https://a.co/d/8SudbqT](https://www.amazon.com/USR-TCP232-302-Serial-Ethernet-Converter-Support/dp/B01GPGPEBM/ref=sr_1_2_sspa?crid=KRBIOY7W26S1&keywords=rs232+ethernet&qid=1707318582&s=electronics&sprefix=rs232+etherne%2Celectronics%2C213&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
 
 ![usr](images/usr-tcp232-302.png)
 
