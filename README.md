@@ -1,4 +1,4 @@
-UPDATES:
+# UPDATES:
 
 1. I was getting errors when I tried to install the add-on in HA. Based on the post from balda at https://community.home-assistant.io/t/errors-when-buliding-a-new-addon/198841/17, there needs to be a build.json file in the nx584 directory. I added one to my fork and it now installs fine.
 
